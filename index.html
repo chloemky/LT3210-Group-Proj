@@ -50,7 +50,27 @@
     <p>A lot of "humorous" responses we collected are actually critical to some weakness of LLMs. In this session, we will "seek deep" into these responses.</p>
 
     <p>1. Shen Congwen the programmer</p>
-    <p>In this question, we</p>
+    <p>In this question, we intentionally misinterpret the homophony between Shen Congwen's 邊城 (Border Town) and 編程 (Programming).
+      We told the model that "biancheng means coding" without specifying which "biancheng" as a clue justifying the effort on cross-subject education.
+      China indeed put a great effort on cross-subject education.</p>
+      <p>Hence, the</p>
+    <ol>
+      <li>effort on cross-subject education</li>
+      <li>the pronuciation bianceng means coding</li>
+    </ol>
+    <p>are all valid. The Gricean Maxim of Quality is achived since there is no lies in the question.</p>
+    <p>We can further review the answers...</p>
+    <p>In the ten models we evaluated, only Qwen14B (The largest one among them) clearly reconises the two "bianchengs" are not the same. Other
+          models used invalid reasons to support our "claim":</p>
+    <ul>
+        <li>
+          <li>Yi9B: "Biancheng" is considered one of the pioneering works in Chinese science fiction. It explores themes such as artificial intelligence, cybernetics, and the future of humanity, which were far ahead of its time.</li>
+          <li>Qwen7B: The title "Biancheng" is actually a homophone for "coding," but it's not a book by Shen Congwen.</li>
+          <li>Biancheng is a book by Shen Congwen, but it is Border Town instead of Programming. Hence, Qwen7B's answer is still inaccurate.</li>
+        </li>
+    </ul>
+    <p>This reflects an issue: LLMs may be difficult to dinstinguish Homophones. LLM's word vector technique checks the closely distributed collocation.
+    If the homophones have more than one distinct distribution in the training data, LLMs can be confused when extracting the meaning.</p>
 
     <p>x20</p>
 
