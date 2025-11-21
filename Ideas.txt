@@ -1,1 +1,5 @@
 Please type your ideas here, use this as a word file...
+
+large vs small model
+temperature可以理解為語氣，越高越creative
+parameters
